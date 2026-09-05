@@ -1,1 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picar AI Technologies Pvt. Ltd. | Intelligence, Simplified</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #07090e;
+            color: #f3f4f6;
+            line-height: 1.6;
+        }
+        header {
+            background: rgba(7, 9, 14, 0.95);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #1f2937;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .logo-text {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        .logo-text span.blue { color: #3b82f6; }
+        .logo-text span.orange { color: #f97316; }
+        .tagline {
+            font-size: 11px;
+            color: #9ca3af;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        nav a {
+            color: #9ca3af;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #3b82f6;
+        }
+        .hero {
+            padding: 180px 20px 100px;
+            text-align: center;
+            background: linear-gradient(to bottom, #07090e, #111827);
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .hero h1 span {
+            color: #f97316;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #9ca3af;
+            max-width: 750px;
+            margin: 0 auto 35px;
+        }
+        .cta-btn {
+            background: linear-gradient(135deg, #3b82f6, #f97316);
+            color: #ffffff;
+            padding: 14px 35px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            display: inline-block;
+        }
+        .cta-btn:hover {
+            opacity: 0.9;
+        }
+        .pillars {
+            padding: 90px 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #ffffff;
+        }
+        .section-title span { color: #3b82f6; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: #111827;
+            padding: 35px;
+            border-radius: 12px;
+            border: 1px solid #1f2937;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+        }
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #3b82f6;
+        }
+        .card p {
+            color: #9ca3af;
+        }
+        .contact-section {
+            padding: 90px 20px;
+            background: #0b0f19;
+            border-top: 1px solid #1f2937;
+        }
+        .contact-box {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #111827;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #1f2937;
+            text-align: center;
+        }
+        .email-links {
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        .email-links a {
+            color: #3b82f6;
+            text-decoration: none;
+            display: block;
+            margin: 8px 0;
+            font-weight: 600;
+        }
+        .email-links a:hover {
+            text-decoration: underline;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #d1d5db;
+            font-weight: 500;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            background: #07090e;
+            border: 1px solid #374151;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 15px;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #05070a;
+            color: #6b7280;
+            border-top: 1px solid #1f2937;
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <div class="logo-container">
+            <div class="logo-text"><span class="blue">PICAR</span> <span class="orange">AI</span></div>
+            <div class="tagline">"Intelligence, Simplified"</div>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#pillars">Pillars</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Next-Gen Fintech & <span>Banking Infrastructure</span></h1>
+        <p>Empowering financial ecosystems with advanced AI switching solutions, secure ATM RuPay debit cards, CTS checks, and UPI reconciliation infrastructure.</p>
+        <a href="#contact" class="cta-btn">Connect With Us</a>
+    </section>
+
+    <section id="pillars" class="pillars">
+        <h2 class="section-title">Our 6 Core <span>Pillars</span></h2>
+        <div class="grid">
+            <div class="card">
+                <h3>1. Onboard</h3>
+                <p>Seamless digital onboarding and KYC verification pipelines designed for rapid user acquisition and security.</p>
+            </div>
+            <div class="card">
+                <h3>2. Lend</h3>
+                <p>Automated credit scoring, loan origination, and smart lending architectures built for modern financial institutions.</p>
+            </div>
+            <div class="card">
+                <h3>3. Secure</h3>
+                <p>Robust fraud detection, risk mitigation, and compliance frameworks protecting high-value transactions.</p>
+            </div>
+            <div class="card">
+                <h3>4. Pay</h3>
+                <p>High-speed payment processing infrastructure, UPI reconciliation, and smooth transaction clearing workflows.</p>
+            </div>
+            <div class="card">
+                <h3>5. Mandate</h3>
+                <p>Automated recurring payment setups, e-mandates, and subscription management solutions.</p>
+            </div>
+            <div class="card">
+                <h3>6. Credit</h3>
+                <p>Advanced credit lifecycle management, portfolio analytics, and smart risk analytics engine.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-box">
+            <h2 class="section-title" style="font-size: 28px; margin-bottom: 15px;">Direct Message <span>Hub</span></h2>
+            <p style="color: #9ca3af; margin-bottom: 20px;">Send your queries directly to our official inboxes below:</p>
+            
+            <div class="email-links">
+                <a href="mailto:Online.picarai@gmail.com">✉️ Online.picarai@gmail.com</a>
+                <a href="mailto:Connect@picarai.co.in">✉️ Connect@picarai.co.in</a>
+            </div>
+            
+            <form action="mailto:Connect@picarai.co.in" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label>Your Name / Company</label>
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label>Your Email Address</label>
+                    <input type="email" name="Email" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Message / Requirements</label>
+                    <textarea name="Message" rows="4" placeholder="Write your requirements here..." required></textarea>
+                </div>
+                <button type="submit" class="cta-btn" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Picar AI Technologies Pvt. Ltd. (Lucknow). All rights reserved.</p>
+        <p style="margin-top: 8px; color: #3b82f6;">Official Inboxes: Online.picarai@gmail.com | Connect@picarai.co.in</p>
+    </footer>
+
+</body>
+</html>
